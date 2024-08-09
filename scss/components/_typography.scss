@@ -1,0 +1,78 @@
+@use '../custom' as *;
+
+.display-2 {
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+
+    &--intro {
+        display: inline-block;
+        font-weight: 700;
+        color: $white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    &--description {
+        font-size: 1rem;
+        display: block;
+        color: $white;
+        margin-top: 0.8rem;
+        text-transform: none;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 1.4rem;
+            display: inline-block;
+        }
+    }
+}
+
+// Heading line 
+.heading-line::before {
+    content: "";
+    width: 10rem;
+    height: 0.1rem;
+    display: block;
+    background-color: $primary;
+    margin: 0 auto;
+}
+
+.heading-line::after {
+    content: "";
+    width: 2rem;
+    height: 0.2rem;
+    display: block;
+    background-color: $primary;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+    margin: 0 auto;
+}
+
+.display-3 {
+    font-family: 'Poppins', sans-serif;
+    
+    &--title {
+        font-size: 1.3rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        display: inline-block;
+        background-clip: text;
+        background-image: linear-gradient(to right, $primary, $secondary);
+        -webkit-text-fill-color: transparent;
+
+        @include media-breakpoint-up(lg){
+            font-size: 2rem;
+        }
+    
+    }
+
+}
+
+.border-right {
+    border-right: 0.1rem solid $gray-300;
+}
+
+//Gradient bg
+.gradient {
+    background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+}

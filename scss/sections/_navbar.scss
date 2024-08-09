@@ -1,0 +1,16 @@
+@use '../custom' as *;
+@use '../components/mixins' as *; 
+
+
+.linear-background {
+    @include gradient;
+    li {
+        padding: 0 0.7rem;
+        a {
+            color: $white !important;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+    }  
+    
+}
