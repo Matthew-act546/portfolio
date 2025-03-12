@@ -3,7 +3,7 @@
 
 .btn-rounded {
     @include media-breakpoint-down(sm) {
-        display: none ;
+        display: none;
     }
 
     position: relative;

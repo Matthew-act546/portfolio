@@ -1,10 +1,12 @@
 @use 'custom';
 
+// Components
 @use 'components/animations';
 @use 'components/buttons';
 @use 'components/mixins';
 @use 'components/typography';
 
+// Sections
 @use 'sections/companies';
 @use 'sections/faq';
 @use 'sections/footer';
