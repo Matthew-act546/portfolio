@@ -32,9 +32,12 @@
         transform: rotate(90deg);
     }
 
+    transition: all 0.3s ease-in-out;
+
     &:hover {
         @include gradient;
         color: $white;
+        
 
         span {
             background-color: rgba($black, 0.6);
