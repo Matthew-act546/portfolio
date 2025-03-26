@@ -11992,6 +11992,12 @@ textarea.form-control-lg {
   filter: grayscale(120);
 }
 
+.code {
+  color: #2E8BC0;
+  font-size: large;
+  font-weight: bold;
+}
+
 .footer {
   padding: 1rem 0;
   background-color: #151414;
