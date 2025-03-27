@@ -4,6 +4,15 @@
     position: relative;
     padding: 1rem 0;
 
+    &__container {
+        @include media-breakpoint-up(lg){
+            display: block;
+        }
+        @include media-breakpoint-down(md){
+            display: none;
+        }
+    }
+
     &__content {
         padding: 1rem;
         margin-top: 0rem;
@@ -32,6 +41,11 @@
 
     &__pic {
         max-width: 100%;
-        
+        @include media-breakpoint-up(lg){
+            display: block;
+        }
+        @include media-breakpoint-down(md){
+            display: none;
+        }
     }
 }

@@ -12255,6 +12255,16 @@ textarea.form-control-lg {
   position: relative;
   padding: 1rem 0;
 }
+@media (min-width: 992px) {
+  .services__container {
+    display: block;
+  }
+}
+@media (max-width: 767.98px) {
+  .services__container {
+    display: none;
+  }
+}
 .services__content {
   padding: 1rem;
   margin-top: 0rem;
@@ -12283,6 +12293,16 @@ textarea.form-control-lg {
 }
 .services__pic {
   max-width: 100%;
+}
+@media (min-width: 992px) {
+  .services__pic {
+    display: block;
+  }
+}
+@media (max-width: 767.98px) {
+  .services__pic {
+    display: none;
+  }
 }
 
 .testimonials {
