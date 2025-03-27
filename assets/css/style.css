@@ -12211,6 +12211,7 @@ textarea.form-control-lg {
   overflow: hidden;
   margin-bottom: 1.2rem;
   border-top: 0.5rem solid #2E8BC0;
+  cursor: pointer;
 }
 .portfolio-box img {
   width: 100%;
