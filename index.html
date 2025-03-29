@@ -446,32 +446,57 @@
         <!-- Portfolio items -->
             <div class="row">
                 <div class="col-lg-4 col-md-6">
-                    <div class="portfolio-box shadow" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="portfolio-box shadow">
                         <img src="images/portfolio/hot-potato-logo.jpg" alt="[portfolio-1 image]" title="Portfolio 1 image" class="img-fluid">
                         <div class="portfolio-info">
                             <div class="caption">
                                 <h4>Hot potato</h4>
                                 <p>category project</p>
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">See it</button>
                             </div>
-                            
                         </div>
-                        <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body ">
-                                        <div style="height: 400px;">
+                        
+                    </div>
+                </div>
 
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div style="border: 1px solid black; height: 55vh; width: 55vw;">
+                                    <div id="carouselExample" class="carousel slide">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="images/services/coding-2-31.png" style="height: 450px;" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/services/ui-design-26.png" style="height: 450px;" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/services/video-tutorial-62.png" style="height: 450px;" class="d-block w-100" alt="...">
+                                            </div>
                                         </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-4 col-md-6">
                     <div class="portfolio-box shadow">
                         <img src="images/portfolio/plmun-connect-logo.png" alt="[portfolio-2 image]" title="Portfolio 2 image" class="img-fluid">
@@ -710,10 +735,10 @@
         </div>
     </footer>
 
-    <!-- BACK TO TOP BUTTON -->
+    <!-- BACK TO TOP BUTTON
     <a href="#" class="shadow back-to-top rounded-circle">
         <i class="fas fa-chevron-up"></i>
-    </a>
+    </a> -->
 
     <script src="script.js"></script>
     <script src="assets/js/bootstrap.bundle.js"></script>

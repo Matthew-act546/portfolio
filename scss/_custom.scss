@@ -20,6 +20,11 @@ $footer: #151414;
 $primary:       #2E8BC0;
 $secondary:     #7EC8E3;
 
+html {
+  scroll-padding-top: 80px;
+}
+
+// ACCORDION CUSTOM STYLE  
 $accordion-padding-y:          1.5rem;
 $accordion-padding-x:          1.5rem;
 $accordion-icon-color:         $primary;
@@ -28,9 +33,22 @@ $accordion-icon-width:         1.875rem;
 $accordion-button-icon:        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16'/><path d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4'/></svg>");
 $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16'/><path d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/></svg>");
 
-html {
-  scroll-padding-top: 80px;
-}
+
+$modal-dialog-margin:               .5rem;
+$modal-dialog-margin-y-sm-up:       1.75rem;
+
+
+$modal-content-color:               null;
+
+$modal-backdrop-bg:                 $black;
+$modal-backdrop-opacity:            .5;
+
+$modal-footer-bg:                   null; 
+
+$modal-fade-transform:              translate(0, -50px);
+$modal-show-transform:              none;
+$modal-transition:                  transform .3s ease-out;
+$modal-scale-transform:             scale(1.02);
 
 // Import Bootstrap 5
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
