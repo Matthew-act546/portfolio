@@ -12188,6 +12188,29 @@ textarea.form-control-lg {
   animation-delay: 1.5s;
 }
 
+.circle-border {
+  width: 420px;
+  height: 420px;
+  border: 5px solid white;
+  border-radius: 50%;
+  position: relative;
+  animation: radiateGlow 3s infinite ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes radiateGlow {
+  0% {
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3);
+  }
+}
 .linear-background {
   background: linear-gradient(to right, rgba(46, 139, 192, 0.95), rgba(126, 200, 227, 0.95));
 }

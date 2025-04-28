@@ -35,3 +35,128 @@
 
 
 </section>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rain Effect</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Set up full screen view */
+    body,
+    html {
+      height: 100%;
+      background-color: #222;
+    }
+
+    /* Center the circle in the viewport */
+    .circle-border {
+      width: 200px;
+      height: 200px;
+      border: 5px solid white;
+      border-radius: 50%;
+      position: relative;
+      overflow: visible;
+      /* Allow the drips to overflow outside the circle */
+    }
+
+    /* Styling the "raindrops" */
+    .drip {
+      position: absolute;
+      top: -10px;
+      /* Start above the circle */
+      width: 8px;
+      /* Width of each raindrop */
+      height: 15px;
+      /* Height of each raindrop */
+      background: blue;
+      border-radius: 50%;
+      opacity: 0;
+      animation: rainAnimation 2s 3 ease-in-out;
+    }
+
+    /* Random positions and sizes for raindrops */
+    .drip:nth-child(1) {
+      left: 5%;
+      animation-delay: 0s;
+      width: 10px;
+      height: 18px;
+      animation-duration: 2s;
+    }
+
+    .drip:nth-child(2) {
+      left: 25%;
+      animation-delay: 0.1s;
+      width: 8px;
+      height: 20px;
+      animation-duration: 2.5s;
+    }
+
+    .drip:nth-child(3) {
+      left: 45%;
+      animation-delay: 0.2s;
+      width: 6px;
+      height: 14px;
+      animation-duration: 1.5s;
+    }
+
+    .drip:nth-child(4) {
+      left: 65%;
+      animation-delay: 0.3s;
+      width: 9px;
+      height: 16px;
+      animation-duration: 2s;
+    }
+
+    .drip:nth-child(5) {
+      left: 85%;
+      animation-delay: 0.4s;
+      width: 7px;
+      height: 15px;
+      animation-duration: 2.3s;
+    }
+
+    /* Keyframes for raindrop animation */
+    @keyframes rainAnimation {
+      0% {
+        top: -10px;
+        opacity: 0;
+      }
+
+      50% {
+        top: 100%;
+        opacity: 1;
+      }
+
+      100% {
+        top: 200px;
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body class="d-flex justify-content-center align-items-center vh-100 bg-dark">
+
+  <div class="circle-border position-relative">
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <img src="images/my-image.png" alt="video illustration" class="img-fluid rounded-circle border border-primary">
+  </div>
+
+</body>
+
+</html>
