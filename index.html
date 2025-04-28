@@ -24,10 +24,10 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav justify-content-start">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        <a class="nav-link" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Services</a>
@@ -45,20 +45,30 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
+
+                <form class="d-flex ms-auto" role="search">
+                    <input class="form-control" type="search" 
+                    placeholder="Search" style="margin-right: 5px;" aria-label="Search" id="searchInput">
+                    <button type="submit" class="btn btn-light text-primary">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
             </div>
         </div>
     </nav>
+    
 
     <!-- Section -->
     <section id="home" class="intro-section">
         <div class="container">
             <div class="row align-items-center">
                 <!-- For intro -->
-                <div class="col-md-6 intros order-md-1 order-2">
+                <div class="col-md-6 intros mt-5">
                     <h1 class="display-2">
                         <span class="display-2--intro">Welcome! <br> I'm Matthew</span>
                         <span class="display-2--description lh-base">
-                            This is my unofficial responsive portfolio website and my learning in bootstrap5 and sass from freecodecamp.org in youtube!
+                            Welcome to my world of web development, where every project tells a story. Explore my portfolio to see how I can help
+                            elevate your business with dynamic, user-centric websites that leave a lasting impression.
                         </span>
                     </h1>
                     <a href="#contact" style="text-decoration: none;">
@@ -71,8 +81,8 @@
                     </a>
                 </div>
                 <!-- For content video -->
-                <div class="col-md-6 intros text-end order-md-2 order-1">
-                    <img src="images/arts/coding-5-61.png" alt="video illustration" class="img-fluid">
+                <div class="col-md-6 mt-md-4 intros text-end ">
+                    <img src="images/my-image.png" alt="video illustration" class="img-fluid rounded-circle border border-primary">
                 </div>
             </div>
         </div>
@@ -83,6 +93,7 @@
         </svg>
     </section>
 
+    
 
     <!-- Services -->
     <section class="services" id="services">
