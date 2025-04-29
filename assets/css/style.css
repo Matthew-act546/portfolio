@@ -11880,18 +11880,20 @@ textarea.form-control-lg {
 }
 .btn-rounded span {
   position: absolute;
-  background-color: #2E8BC0;
-  width: 2.5rem;
-  height: 2.5rem;
   top: 50%;
   right: 5px;
   transform: translateY(-50%);
+  background-color: #2E8BC0;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
 }
 .btn-rounded i {
   color: #fff;
   font-size: 1rem;
   line-height: 2.5rem;
+}
+.btn-rounded .rotate-icon {
   transform: rotate(90deg);
 }
 .btn-rounded:hover {
@@ -12169,23 +12171,6 @@ textarea.form-control-lg {
 .intros .video-box a span i {
   font-size: 6rem;
   color: #7EC8E3;
-}
-
-.border-animation {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 6rem;
-  height: 6rem;
-  border: 0.55rem solid #fff;
-  border-radius: 50%;
-  animation: pulse-border 1.5s linear infinite;
-}
-.border-animation--border-1 {
-  animation-delay: 1s;
-}
-.border-animation--border-2 {
-  animation-delay: 1.5s;
 }
 
 .circle-border {
