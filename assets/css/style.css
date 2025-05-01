@@ -12178,11 +12178,17 @@ textarea.form-control-lg {
   height: 420px;
   border: 5px solid white;
   border-radius: 50%;
-  position: relative;
   animation: radiateGlow 3s infinite ease-in-out;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 767.98px) {
+  .circle-border {
+    width: 220px;
+    height: 220px;
+  }
 }
 
 @keyframes radiateGlow {
