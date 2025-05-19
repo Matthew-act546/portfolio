@@ -11878,7 +11878,7 @@ textarea.form-control-lg {
   background-color: white;
   transition: all 0.3s ease-in-out;
 }
-.btn-rounded #left-icon {
+.btn-rounded #left {
   left: 5px;
 }
 .btn-rounded span {
