@@ -13,7 +13,7 @@ html {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
-  --bs-pink: #d112e3;
+  --bs-pink: #d63384;
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
   --bs-yellow: #ffc107;
@@ -102,7 +102,7 @@ html {
   --bs-link-decoration: underline;
   --bs-link-hover-color: #256f9a;
   --bs-link-hover-color-rgb: 37, 111, 154;
-  --bs-code-color: #d112e3;
+  --bs-code-color: #d63384;
   --bs-highlight-color: #212529;
   --bs-highlight-bg: #fff3cd;
   --bs-border-width: 1px;
@@ -174,7 +174,7 @@ html {
   --bs-link-hover-color: #9bc7e1;
   --bs-link-color-rgb: 130, 185, 217;
   --bs-link-hover-color-rgb: 155, 199, 225;
-  --bs-code-color: #e371ee;
+  --bs-code-color: #e685b5;
   --bs-highlight-color: #dee2e6;
   --bs-highlight-bg: #664d03;
   --bs-border-color: #495057;
@@ -11878,6 +11878,9 @@ textarea.form-control-lg {
   background-color: white;
   transition: all 0.3s ease-in-out;
 }
+.btn-rounded #left-icon {
+  left: 5px;
+}
 .btn-rounded span {
   position: absolute;
   top: 50%;
@@ -11902,6 +11905,10 @@ textarea.form-control-lg {
 }
 .btn-rounded:hover span {
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.btn-rounded-pages {
+  padding: 0.9375rem 1rem 0.9375rem 1rem;
 }
 
 .display-2 {
