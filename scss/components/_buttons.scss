@@ -48,3 +48,16 @@
 .btn-rounded-pages {
     padding: 0.9375rem 1rem 0.9375rem 1rem;
 }
+
+.link-logo {
+    display: inline-block;
+    transition: all 2 ease;
+    color: #fff;
+
+    &:hover {
+        background: $secondary;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+    }
+}
