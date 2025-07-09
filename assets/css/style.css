@@ -11911,6 +11911,18 @@ textarea.form-control-lg {
   padding: 0.9375rem 1rem 0.9375rem 1rem;
 }
 
+.link-logo {
+  display: inline-block;
+  transition: all 2 ease;
+  color: #fff;
+}
+.link-logo:hover {
+  background: #7EC8E3;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
 .display-2 {
   margin-bottom: 1rem;
   text-transform: capitalize;
@@ -12181,8 +12193,6 @@ textarea.form-control-lg {
 }
 
 .circle-border {
-  width: 420px;
-  height: 420px;
   border: 5px solid white;
   border-radius: 50%;
   animation: radiateGlow 3s infinite ease-in-out;
@@ -12190,11 +12200,13 @@ textarea.form-control-lg {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 @media (max-width: 767.98px) {
   .circle-border {
     width: 220px;
     height: 220px;
+    background-color: white;
   }
 }
 
